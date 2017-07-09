@@ -1,0 +1,82 @@
+#images {
+	display: block;
+	margin: auto;
+	text-align: center;
+	width: 70em;
+}
+.poke {
+	display: inline-block;
+	padding: 0 0.5em 0.5em 0.5em;
+	margin: 0.2em;
+}
+.poke img, .poke input, .poke button {
+	display: block;
+	margin: auto;
+}
+.poke input {
+	width: 2em;
+	text-align: center;
+	border: none;
+	font-size: 1.8em;
+	font-weight: bold;
+	font-family: "Arial Black";
+	position: relative;
+	top: -0.2em;
+	background: transparent;
+}
+.poke input:focus {
+	color: #F00;
+}
+button {
+	font-size: 0.8em;
+	cursor: pointer;
+}
+.poke .off {
+	display: none;
+}
+.poke .on {
+	display: block;
+}
+textarea {
+	display: inline-block;
+	width: 45%;
+	height: 30em;
+	padding: 0.7em 1em;
+}
+.controls {
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0.5em 1em;
+	margin: 0.5em;
+}
+.controls:hover {
+	color: #F00;
+	position: relative;
+	top: -1px;
+	right: -1px;
+}
+.controls[disabled] {
+	color: #999;
+	text-decoration: line-through;
+}
+b {
+	color: #F00;
+}
+.legendaries {
+	background: #FFE6E6;
+}
+.eggs {
+	background: #E6FFE6;
+}
+.evolves {
+	background: #F0D9FF;
+}
+.disabled {
+	background: #A55;
+}
+.disabled img, .disabled button {
+	opacity: 0.3;
+}
+.disabled input {
+	font-family: "Impact";
+}
