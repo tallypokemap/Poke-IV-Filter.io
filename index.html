@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<!-- ########################################
+#		Created by Jenner Palacios			#
+#		Free code/opensource, unicode		#
+#				MIT license 				#
+############################################# -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SeattlePokeMaps.com Filter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="PokeMap">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#3b3b3b">
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/script.js"></script>
+</head>
+<body>
+<div id="images">
+<div class="poke" id="p1" title="p1"><label><img src="img/1.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="1" value="90" /></label><button onClick="off('1')" class="on">OFF</button></div>
+<div class="poke" id="p2" title="p2"><label><img src="img/2.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="2" value="80" /></label><button onClick="off('2')" class="on">OFF</button></div>
+<div class="poke" id="p3" title="p3"><label><img src="img/3.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="3" value="50" /></label><button onClick="off('3')" class="on">OFF</button></div>
+<div class="poke" id="p4" title="p4"><label><img src="img/4.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="4" value="80" /></label><button onClick="off('4')" class="on">OFF</button></div>
+<div class="poke" id="p5" title="p5"><label><img src="img/5.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="5" value="80" /></label><button onClick="off('5')" class="on">OFF</button></div>
+<div class="poke" id="p6" title="p6"><label><img src="img/6.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="6" value="50" /></label><button onClick="off('6')" class="on">OFF</button></div>
+<div class="poke" id="p7" title="p7"><label><img src="img/7.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="7" value="80" /></label><button onClick="off('7')" class="on">OFF</button></div>
+<div class="poke" id="p8" title="p8"><label><img src="img/8.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="8" value="80" /></label><button onClick="off('8')" class="on">OFF</button></div>
+<div class="poke" id="p9" title="p9"><label><img src="img/9.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="9" value="50" /></label><button onClick="off('9')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p10" title="p10"><label><img src="img/10.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="10" value="98" /></label><button onClick="off('10')" class="on">OFF</button></div>
+<div class="poke" id="p11" title="p11"><label><img src="img/11.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="11" value="98" /></label><button onClick="off('11')" class="on">OFF</button></div>
+<div class="poke" id="p12" title="p12"><label><img src="img/12.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="12" value="98" /></label><button onClick="off('12')" class="on">OFF</button></div>
+<div class="poke" id="p13" title="p13"><label><img src="img/13.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="13" value="98" /></label><button onClick="off('13')" class="on">OFF</button></div>
+<div class="poke" id="p14" title="p14"><label><img src="img/14.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="14" value="98" /></label><button onClick="off('14')" class="on">OFF</button></div>
+<div class="poke" id="p15" title="p15"><label><img src="img/15.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="15" value="98" /></label><button onClick="off('15')" class="on">OFF</button></div>
+<div class="poke" id="p16" title="p16"><label><img src="img/16.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="16" value="98" /></label><button onClick="off('16')" class="on">OFF</button></div>
+<div class="poke" id="p17" title="p17"><label><img src="img/17.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="17" value="98" /></label><button onClick="off('17')" class="on">OFF</button></div>
+<div class="poke" id="p18" title="p18"><label><img src="img/18.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="18" value="98" /></label><button onClick="off('18')" class="on">OFF</button></div>
+<div class="poke" id="p19" title="p19"><label><img src="img/19.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="19" value="98" /></label><button onClick="off('19')" class="on">OFF</button></div>
+<div class="poke" id="p20" title="p20"><label><img src="img/20.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="20" value="98" /></label><button onClick="off('20')" class="on">OFF</button></div>
+<div class="poke" id="p21" title="p21"><label><img src="img/21.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="21" value="98" /></label><button onClick="off('21')" class="on">OFF</button></div>
+<div class="poke" id="p22" title="p22"><label><img src="img/22.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="22" value="98" /></label><button onClick="off('22')" class="on">OFF</button></div>
+<div class="poke" id="p23" title="p23"><label><img src="img/23.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="23" value="98" /></label><button onClick="off('23')" class="on">OFF</button></div>
+<div class="poke" id="p24" title="p24"><label><img src="img/24.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="24" value="98" /></label><button onClick="off('24')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p25" title="p25"><label><img src="img/25.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="25" value="90" /></label><button onClick="off('25')" class="on">OFF</button></div>
+<div class="poke" id="p26" title="p26"><label><img src="img/26.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="26" value="90" /></label><button onClick="off('26')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p27" title="p27"><label><img src="img/27.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="27" value="98" /></label><button onClick="off('27')" class="on">OFF</button></div>
+<div class="poke" id="p28" title="p28"><label><img src="img/28.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="28" value="98" /></label><button onClick="off('28')" class="on">OFF</button></div>
+<div class="poke" id="p29" title="p29"><label><img src="img/29.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="29" value="98" /></label><button onClick="off('29')" class="on">OFF</button></div>
+<div class="poke" id="p30" title="p30"><label><img src="img/30.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="30" value="98" /></label><button onClick="off('30')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p31" title="p31"><label><img src="img/31.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="31" value="90" /></label><button onClick="off('31')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p32" title="p32"><label><img src="img/32.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="32" value="98" /></label><button onClick="off('32')" class="on">OFF</button></div>
+<div class="poke" id="p33" title="p33"><label><img src="img/33.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="33" value="98" /></label><button onClick="off('33')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p34" title="p34"><label><img src="img/34.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="34" value="90" /></label><button onClick="off('34')" class="on">OFF</button></div>
+<div class="poke" id="p35" title="p35"><label><img src="img/35.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="35" value="90" /></label><button onClick="off('35')" class="on">OFF</button></div>
+<div class="poke" id="p36" title="p36"><label><img src="img/36.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="36" value="90" /></label><button onClick="off('36')" class="on">OFF</button></div>
+<div class="poke" id="p37" title="p37"><label><img src="img/37.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="37" value="90" /></label><button onClick="off('37')" class="on">OFF</button></div>
+<div class="poke" id="p38" title="p38"><label><img src="img/38.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="38" value="50" /></label><button onClick="off('38')" class="on">OFF</button></div>
+<div class="poke" id="p39" title="p39"><label><img src="img/39.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="39" value="90" /></label><button onClick="off('39')" class="on">OFF</button></div>
+<div class="poke" id="p40" title="p40"><label><img src="img/40.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="40" value="90" /></label><button onClick="off('40')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p41" title="p41"><label><img src="img/41.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="41" value="98" /></label><button onClick="off('41')" class="on">OFF</button></div>
+<div class="poke" id="p42" title="p42"><label><img src="img/42.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="42" value="98" /></label><button onClick="off('42')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p43" title="p43"><label><img src="img/43.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="43" value="90" /></label><button onClick="off('43')" class="on">OFF</button></div>
+<div class="poke" id="p44" title="p44"><label><img src="img/44.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="44" value="80" /></label><button onClick="off('44')" class="on">OFF</button></div>
+<div class="poke" id="p45" title="p45"><label><img src="img/45.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="45" value="50" /></label><button onClick="off('45')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p46" title="p46"><label><img src="img/46.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="46" value="98" /></label><button onClick="off('46')" class="on">OFF</button></div>
+<div class="poke" id="p47" title="p47"><label><img src="img/47.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="47" value="98" /></label><button onClick="off('47')" class="on">OFF</button></div>
+<div class="poke" id="p48" title="p48"><label><img src="img/48.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="48" value="98" /></label><button onClick="off('48')" class="on">OFF</button></div>
+<div class="poke" id="p49" title="p49"><label><img src="img/49.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="49" value="98" /></label><button onClick="off('49')" class="on">OFF</button></div>
+<div class="poke" id="p50" title="p50"><label><img src="img/50.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="50" value="98" /></label><button onClick="off('50')" class="on">OFF</button></div>
+<div class="poke" id="p51" title="p51"><label><img src="img/51.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="51" value="98" /></label><button onClick="off('51')" class="on">OFF</button></div>
+<div class="poke" id="p52" title="p52"><label><img src="img/52.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="52" value="98" /></label><button onClick="off('52')" class="on">OFF</button></div>
+<div class="poke" id="p53" title="p53"><label><img src="img/53.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="53" value="98" /></label><button onClick="off('53')" class="on">OFF</button></div>
+<div class="poke" id="p54" title="p54"><label><img src="img/54.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="54" value="98" /></label><button onClick="off('54')" class="on">OFF</button></div>
+<div class="poke" id="p55" title="p55"><label><img src="img/55.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="55" value="98" /></label><button onClick="off('55')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p56" title="p56"><label><img src="img/56.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="56" value="90" /></label><button onClick="off('56')" class="on">OFF</button></div>
+<div class="poke" id="p57" title="p57"><label><img src="img/57.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="57" value="90" /></label><button onClick="off('57')" class="on">OFF</button></div>
+<div class="poke" id="p58" title="p58"><label><img src="img/58.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="58" value="90" /></label><button onClick="off('58')" class="on">OFF</button></div>
+<div class="poke" id="p59" title="p59"><label><img src="img/59.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="59" value="90" /></label><button onClick="off('59')" class="on">OFF</button></div>
+<div class="poke" id="p60" title="p60"><label><img src="img/60.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="60" value="90" /></label><button onClick="off('60')" class="on">OFF</button></div>
+<div class="poke" id="p61" title="p61"><label><img src="img/61.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="61" value="90" /></label><button onClick="off('61')" class="on">OFF</button></div>
+<div class="poke" id="p62" title="p62"><label><img src="img/62.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="62" value="90" /></label><button onClick="off('62')" class="on">OFF</button></div>
+<div class="poke" id="p63" title="p63"><label><img src="img/63.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="63" value="90" /></label><button onClick="off('63')" class="on">OFF</button></div>
+<div class="poke" id="p64" title="p64"><label><img src="img/64.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="64" value="80" /></label><button onClick="off('64')" class="on">OFF</button></div>
+<div class="poke" id="p65" title="p65"><label><img src="img/65.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="65" value="50" /></label><button onClick="off('65')" class="on">OFF</button></div>
+<div class="poke" id="p66" title="p66"><label><img src="img/66.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="66" value="90" /></label><button onClick="off('66')" class="on">OFF</button></div>
+<div class="poke" id="p67" title="p67"><label><img src="img/67.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="67" value="90" /></label><button onClick="off('67')" class="on">OFF</button></div>
+<div class="poke" id="p68" title="p68"><label><img src="img/68.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="68" value="50" /></label><button onClick="off('68')" class="on">OFF</button></div>
+<div class="poke" id="p69" title="p69"><label><img src="img/69.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="69" value="95" /></label><button onClick="off('69')" class="on">OFF</button></div>
+<div class="poke" id="p70" title="p70"><label><img src="img/70.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="70" value="90" /></label><button onClick="off('70')" class="on">OFF</button></div>
+<div class="poke" id="p71" title="p71"><label><img src="img/71.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="71" value="90" /></label><button onClick="off('71')" class="on">OFF</button></div>
+<div class="poke" id="p72" title="p72"><label><img src="img/72.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="72" value="95" /></label><button onClick="off('72')" class="on">OFF</button></div>
+<div class="poke" id="p73" title="p73"><label><img src="img/73.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="73" value="95" /></label><button onClick="off('73')" class="on">OFF</button></div>
+<div class="poke" id="p74" title="p74"><label><img src="img/74.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="74" value="90" /></label><button onClick="off('74')" class="on">OFF</button></div>
+<div class="poke" id="p75" title="p75"><label><img src="img/75.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="75" value="90" /></label><button onClick="off('75')" class="on">OFF</button></div>
+<div class="poke" id="p76" title="p76"><label><img src="img/76.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="76" value="50" /></label><button onClick="off('76')" class="on">OFF</button></div>
+<div class="poke" id="p77" title="p77"><label><img src="img/77.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="77" value="90" /></label><button onClick="off('77')" class="on">OFF</button></div>
+<div class="poke" id="p78" title="p78"><label><img src="img/78.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="78" value="90" /></label><button onClick="off('78')" class="on">OFF</button></div>
+<div class="poke" id="p79" title="p79"><label><img src="img/79.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="79" value="90" /></label><button onClick="off('79')" class="on">OFF</button></div>
+<div class="poke" id="p80" title="p80"><label><img src="img/80.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="80" value="80" /></label><button onClick="off('80')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p81" title="p81"><label><img src="img/81.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="81" value="98" /></label><button onClick="off('81')" class="on">OFF</button></div>
+<div class="poke" id="p82" title="p82"><label><img src="img/82.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="82" value="98" /></label><button onClick="off('82')" class="on">OFF</button></div>
+<div class="poke legendaries" id="p83" title="p83"><label><img src="img/83.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="83" value="0" /></label><button onClick="off('83')" class="on">OFF</button></div>
+<div class="poke" id="p84" title="p84"><label><img src="img/84.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="84" value="80" /></label><button onClick="off('84')" class="on">OFF</button></div>
+<div class="poke" id="p85" title="p85"><label><img src="img/85.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="85" value="80" /></label><button onClick="off('85')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p86" title="p86"><label><img src="img/86.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="86" value="90" /></label><button onClick="off('86')" class="on">OFF</button></div>
+<div class="poke" id="p87" title="p87"><label><img src="img/87.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="87" value="90" /></label><button onClick="off('87')" class="on">OFF</button></div>
+<div class="poke" id="p88" title="p88"><label><img src="img/88.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="88" value="0" /></label><button onClick="off('88')" class="on">OFF</button></div>
+<div class="poke" id="p89" title="p89"><label><img src="img/89.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="89" value="0" /></label><button onClick="off('89')" class="on">OFF</button></div>
+<div class="poke" id="p90" title="p90"><label><img src="img/90.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="90" value="95" /></label><button onClick="off('90')" class="on">OFF</button></div>
+<div class="poke" id="p91" title="p91"><label><img src="img/91.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="91" value="90" /></label><button onClick="off('91')" class="on">OFF</button></div>
+<div class="poke" id="p92" title="p92"><label><img src="img/92.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="92" value="95" /></label><button onClick="off('92')" class="on">OFF</button></div>
+<div class="poke" id="p93" title="p93"><label><img src="img/93.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="93" value="95" /></label><button onClick="off('93')" class="on">OFF</button></div>
+<div class="poke" id="p94" title="p94"><label><img src="img/94.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="94" value="90" /></label><button onClick="off('94')" class="on">OFF</button></div>
+<div class="poke" id="p95" title="p95"><label><img src="img/95.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="95" value="90" /></label><button onClick="off('95')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p96" title="p96"><label><img src="img/96.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="96" value="98" /></label><button onClick="off('96')" class="on">OFF</button></div>
+<div class="poke" id="p97" title="p97"><label><img src="img/97.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="97" value="98" /></label><button onClick="off('97')" class="on">OFF</button></div>
+<div class="poke" id="p98" title="p98"><label><img src="img/98.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="98" value="98" /></label><button onClick="off('98')" class="on">OFF</button></div>
+<div class="poke" id="p99" title="p99"><label><img src="img/99.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="99" value="98" /></label><button onClick="off('99')" class="on">OFF</button></div>
+<div class="poke" id="p100" title="p100"><label><img src="img/100.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="100" value="98" /></label><button onClick="off('100')" class="on">OFF</button></div>
+<div class="poke" id="p101" title="p101"><label><img src="img/101.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="101" value="98" /></label><button onClick="off('101')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p102" title="p102"><label><img src="img/102.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="102" value="90" /></label><button onClick="off('102')" class="on">OFF</button></div>
+<div class="poke" id="p103" title="p103"><label><img src="img/103.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="103" value="80" /></label><button onClick="off('103')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p104" title="p104"><label><img src="img/104.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="104" value="98" /></label><button onClick="off('104')" class="on">OFF</button></div>
+<div class="poke" id="p105" title="p105"><label><img src="img/105.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="105" value="98" /></label><button onClick="off('105')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p106" title="p106"><label><img src="img/106.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="106" value="0" /></label><button onClick="off('106')" class="on">OFF</button></div>
+<div class="poke" id="p107" title="p107"><label><img src="img/107.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="107" value="0" /></label><button onClick="off('107')" class="on">OFF</button></div>
+<div class="poke" id="p108" title="p108"><label><img src="img/108.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="108" value="95" /></label><button onClick="off('108')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p109" title="p109"><label><img src="img/109.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="109" value="98" /></label><button onClick="off('109')" class="on">OFF</button></div>
+<div class="poke" id="p110" title="p110"><label><img src="img/110.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="110" value="98" /></label><button onClick="off('110')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p111" title="p111"><label><img src="img/111.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="111" value="90" /></label><button onClick="off('111')" class="on">OFF</button></div>
+<div class="poke" id="p112" title="p112"><label><img src="img/112.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="112" value="80" /></label><button onClick="off('112')" class="on">OFF</button></div>
+<div class="poke" id="p113" title="p113"><label><img src="img/113.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="113" value="0" /></label><button onClick="off('113')" class="on">OFF</button></div>
+<div class="poke" id="p114" title="p114"><label><img src="img/114.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="114" value="0" /></label><button onClick="off('114')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke legendaries" id="p115" title="p115"><label><img src="img/115.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="115" value="0" /></label><button onClick="off('115')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p116" title="p116"><label><img src="img/116.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="116" value="90" /></label><button onClick="off('116')" class="on">OFF</button></div>
+<div class="poke" id="p117" title="p117"><label><img src="img/117.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="117" value="90" /></label><button onClick="off('117')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p118" title="p118"><label><img src="img/118.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="118" value="98" /></label><button onClick="off('118')" class="on">OFF</button></div>
+<div class="poke" id="p119" title="p119"><label><img src="img/119.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="119" value="98" /></label><button onClick="off('119')" class="on">OFF</button></div>
+<div class="poke" id="p120" title="p120"><label><img src="img/120.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="120" value="98" /></label><button onClick="off('120')" class="on">OFF</button></div>
+<div class="poke" id="p121" title="p121"><label><img src="img/121.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="121" value="98" /></label><button onClick="off('121')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke legendaries" id="p122" title="p122"><label><img src="img/122.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="122" value="0" /></label><button onClick="off('122')" class="on">OFF</button></div>
+<div class="poke" id="p123" title="p123"><label><img src="img/123.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="123" value="95" /></label><button onClick="off('123')" class="on">OFF</button></div>
+<div class="poke" id="p124" title="p124"><label><img src="img/124.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="124" value="95" /></label><button onClick="off('124')" class="on">OFF</button></div>
+<div class="poke" id="p125" title="p125"><label><img src="img/125.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="125" value="95" /></label><button onClick="off('125')" class="on">OFF</button></div>
+<div class="poke" id="p126" title="p126"><label><img src="img/126.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="126" value="95" /></label><button onClick="off('126')" class="on">OFF</button></div>
+<div class="poke" id="p127" title="p127"><label><img src="img/127.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="127" value="95" /></label><button onClick="off('127')" class="on">OFF</button></div>
+<div class="poke" id="p128" title="p128"><label><img src="img/128.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="128" value="90" /></label><button onClick="off('128')" class="on">OFF</button></div>
+<div class="poke" id="p129" title="p129"><label><img src="img/129.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="129" value="90" /></label><button onClick="off('129')" class="on">OFF</button></div>
+<div class="poke" id="p130" title="p130"><label><img src="img/130.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="130" value="80" /></label><button onClick="off('130')" class="on">OFF</button></div>
+<div class="poke" id="p131" title="p131"><label><img src="img/131.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="131" value="0" /></label><button onClick="off('131')" class="on">OFF</button></div>
+<div class="poke" id="p132" title="p132"><label><img src="img/132.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="132" value="0" /></label><button onClick="off('132')" class="on">OFF</button></div>
+<div class="poke" id="p133" title="p133"><label><img src="img/133.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="133" value="95" /></label><button onClick="off('133')" class="on">OFF</button></div>
+<div class="poke" id="p134" title="p134"><label><img src="img/134.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="134" value="50" /></label><button onClick="off('134')" class="on">OFF</button></div>
+<div class="poke" id="p135" title="p135"><label><img src="img/135.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="135" value="50" /></label><button onClick="off('135')" class="on">OFF</button></div>
+<div class="poke" id="p136" title="p136"><label><img src="img/136.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="136" value="50" /></label><button onClick="off('136')" class="on">OFF</button></div>
+<div class="poke" id="p137" title="p137"><label><img src="img/137.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="137" value="0" /></label><button onClick="off('137')" class="on">OFF</button></div>
+<div class="poke" id="p138" title="p138"><label><img src="img/138.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="138" value="95" /></label><button onClick="off('138')" class="on">OFF</button></div>
+<div class="poke" id="p139" title="p139"><label><img src="img/139.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="139" value="90" /></label><button onClick="off('139')" class="on">OFF</button></div>
+<div class="poke" id="p140" title="p140"><label><img src="img/140.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="140" value="95" /></label><button onClick="off('140')" class="on">OFF</button></div>
+<div class="poke" id="p141" title="p141"><label><img src="img/141.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="141" value="90" /></label><button onClick="off('141')" class="on">OFF</button></div>
+<div class="poke" id="p142" title="p142"><label><img src="img/142.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="142" value="90" /></label><button onClick="off('142')" class="on">OFF</button></div>
+<div class="poke" id="p143" title="p143"><label><img src="img/143.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="143" value="0" /></label><button onClick="off('143')" class="on">OFF</button></div>
+<div class="poke legendaries" id="p144" title="p144"><label><img src="img/144.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="144" value="0" /></label><button onClick="off('144')" class="on">OFF</button></div>
+<div class="poke legendaries" id="p145" title="p145"><label><img src="img/145.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="145" value="0" /></label><button onClick="off('145')" class="on">OFF</button></div>
+<div class="poke legendaries" id="p146" title="p146"><label><img src="img/146.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="146" value="0" /></label><button onClick="off('146')" class="on">OFF</button></div>
+<div class="poke" id="p147" title="p147"><label><img src="img/147.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="147" value="0" /></label><button onClick="off('147')" class="on">OFF</button></div>
+<div class="poke" id="p148" title="p148"><label><img src="img/148.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="148" value="0" /></label><button onClick="off('148')" class="on">OFF</button></div>
+<div class="poke" id="p149" title="p149"><label><img src="img/149.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="149" value="0" /></label><button onClick="off('149')" class="on">OFF</button></div>
+<div class="poke legendaries" id="p150" title="p150"><label><img src="img/150.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="150" value="0" /></label><button onClick="off('150')" class="on">OFF</button></div>
+<div class="poke legendaries" id="p151" title="p151"><label><img src="img/151.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="151" value="0" /></label><button onClick="off('151')" class="on">OFF</button></div>
+<div class="poke" id="p152" title="p152"><label><img src="img/152.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="152" value="95" /></label><button onClick="off('152')" class="on">OFF</button></div>
+<div class="poke" id="p153" title="p153"><label><img src="img/153.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="153" value="90" /></label><button onClick="off('153')" class="on">OFF</button></div>
+<div class="poke" id="p154" title="p154"><label><img src="img/154.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="154" value="50" /></label><button onClick="off('154')" class="on">OFF</button></div>
+<div class="poke" id="p155" title="p155"><label><img src="img/155.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="155" value="80" /></label><button onClick="off('155')" class="on">OFF</button></div>
+<div class="poke" id="p156" title="p156"><label><img src="img/156.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="156" value="80" /></label><button onClick="off('156')" class="on">OFF</button></div>
+<div class="poke" id="p157" title="p157"><label><img src="img/157.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="157" value="50" /></label><button onClick="off('157')" class="on">OFF</button></div>
+<div class="poke" id="p158" title="p158"><label><img src="img/158.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="158" value="80" /></label><button onClick="off('158')" class="on">OFF</button></div>
+<div class="poke" id="p159" title="p159"><label><img src="img/159.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="159" value="80" /></label><button onClick="off('159')" class="on">OFF</button></div>
+<div class="poke" id="p160" title="p160"><label><img src="img/160.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="160" value="50" /></label><button onClick="off('160')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p161" title="p161"><label><img src="img/161.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="161" value="98" /></label><button onClick="off('161')" class="on">OFF</button></div>
+<div class="poke" id="p162" title="p162"><label><img src="img/162.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="162" value="98" /></label><button onClick="off('162')" class="on">OFF</button></div>
+<div class="poke" id="p163" title="p163"><label><img src="img/163.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="163" value="98" /></label><button onClick="off('163')" class="on">OFF</button></div>
+<div class="poke" id="p164" title="p164"><label><img src="img/164.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="164" value="98" /></label><button onClick="off('164')" class="on">OFF</button></div>
+<div class="poke" id="p165" title="p165"><label><img src="img/165.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="165" value="98" /></label><button onClick="off('165')" class="on">OFF</button></div>
+<div class="poke" id="p166" title="p166"><label><img src="img/166.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="166" value="98" /></label><button onClick="off('166')" class="on">OFF</button></div>
+<div class="poke" id="p167" title="p167"><label><img src="img/167.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="167" value="98" /></label><button onClick="off('167')" class="on">OFF</button></div>
+<div class="poke" id="p168" title="p168"><label><img src="img/168.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="168" value="98" /></label><button onClick="off('168')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p169" title="p169"><label><img src="img/169.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="169" value="90" /></label><button onClick="off('169')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p170" title="p170"><label><img src="img/170.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="170" value="98" /></label><button onClick="off('170')" class="on">OFF</button></div>
+<div class="poke" id="p171" title="p171"><label><img src="img/171.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="171" value="98" /></label><button onClick="off('171')" class="on">OFF</button></div>
+<div class="poke eggs" id="p172" title="p172"><label><img src="img/172.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="172" value="0" /></label><button onClick="off('172')" class="on">OFF</button></div>
+<div class="poke eggs" id="p173" title="p173"><label><img src="img/173.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="173" value="0" /></label><button onClick="off('173')" class="on">OFF</button></div>
+<div class="poke eggs" id="p174" title="p174"><label><img src="img/174.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="174" value="0" /></label><button onClick="off('174')" class="on">OFF</button></div>
+<div class="poke eggs" id="p175" title="p175"><label><img src="img/175.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="175" value="0" /></label><button onClick="off('175')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p176" title="p176"><label><img src="img/176.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="176" value="0" /></label><button onClick="off('176')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p177" title="p177"><label><img src="img/177.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="177" value="98" /></label><button onClick="off('177')" class="on">OFF</button></div>
+<div class="poke" id="p178" title="p178"><label><img src="img/178.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="178" value="98" /></label><button onClick="off('178')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p179" title="p179"><label><img src="img/179.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="179" value="0" /></label><button onClick="off('179')" class="on">OFF</button></div>
+<div class="poke" id="p180" title="p180"><label><img src="img/180.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="180" value="0" /></label><button onClick="off('180')" class="on">OFF</button></div>
+<div class="poke" id="p181" title="p181"><label><img src="img/181.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="181" value="0" /></label><button onClick="off('181')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke evolves" id="p182" title="p182"><label><img src="img/182.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="182" value="0" /></label><button onClick="off('182')" class="on">OFF</button></div>
+<div class="poke" id="p183" title="p183"><label><img src="img/183.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="183" value="98" /></label><button onClick="off('183')" class="on">OFF</button></div>
+<div class="poke" id="p184" title="p184"><label><img src="img/184.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="184" value="98" /></label><button onClick="off('184')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p185" title="p185"><label><img src="img/185.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="185" value="90" /></label><button onClick="off('185')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke evolves" id="p186" title="p186"><label><img src="img/186.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="186" value="0" /></label><button onClick="off('186')" class="on">OFF</button></div>
+<div class="poke" id="p187" title="p187"><label><img src="img/187.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="187" value="98" /></label><button onClick="off('187')" class="on">OFF</button></div>
+<div class="poke" id="p188" title="p188"><label><img src="img/188.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="188" value="98" /></label><button onClick="off('188')" class="on">OFF</button></div>
+<div class="poke" id="p189" title="p189"><label><img src="img/189.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="189" value="98" /></label><button onClick="off('189')" class="on">OFF</button></div>
+<div class="poke" id="p190" title="p190"><label><img src="img/190.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="190" value="98" /></label><button onClick="off('190')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p191" title="p191"><label><img src="img/191.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="191" value="90" /></label><button onClick="off('191')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke evolves" id="p192" title="p192"><label><img src="img/192.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="192" value="0" /></label><button onClick="off('192')" class="on">OFF</button></div>
+<div class="poke" id="p193" title="p193"><label><img src="img/193.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="193" value="98" /></label><button onClick="off('193')" class="on">OFF</button></div>
+<div class="poke" id="p194" title="p194"><label><img src="img/194.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="194" value="98" /></label><button onClick="off('194')" class="on">OFF</button></div>
+<div class="poke" id="p195" title="p195"><label><img src="img/195.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="195" value="98" /></label><button onClick="off('195')" class="on">OFF</button></div>
+<div class="poke evolves" id="p196" title="p196"><label><img src="img/196.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="196" value="98" /></label><button onClick="off('196')" class="on">OFF</button></div>
+<div class="poke evolves" id="p197" title="p197"><label><img src="img/197.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="197" value="98" /></label><button onClick="off('197')" class="on">OFF</button></div>
+<div class="poke" id="p198" title="p198"><label><img src="img/198.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="198" value="98" /></label><button onClick="off('198')" class="on">OFF</button></div>
+<div class="poke evolves" id="p199" title="p199"><label><img src="img/199.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="199" value="98" /></label><button onClick="off('199')" class="on">OFF</button></div>
+<div class="poke" id="p200" title="p200"><label><img src="img/200.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="200" value="98" /></label><button onClick="off('200')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p201" title="p201"><label><img src="img/201.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="201" value="0" /></label><button onClick="off('201')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p202" title="p202"><label><img src="img/202.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="202" value="98" /></label><button onClick="off('202')" class="on">OFF</button></div>
+<div class="poke" id="p203" title="p203"><label><img src="img/203.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="203" value="98" /></label><button onClick="off('203')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p204" title="p204"><label><img src="img/204.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="204" value="80" /></label><button onClick="off('204')" class="on">OFF</button></div>
+<div class="poke" id="p205" title="p205"><label><img src="img/205.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="205" value="80" /></label><button onClick="off('205')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p206" title="p206"><label><img src="img/206.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="206" value="98" /></label><button onClick="off('206')" class="on">OFF</button></div>
+<div class="poke" id="p207" title="p207"><label><img src="img/207.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="207" value="98" /></label><button onClick="off('207')" class="on">OFF</button></div>
+<div class="poke evolves" id="p208" title="p208"><label><img src="img/208.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="208" value="0" /></label><button onClick="off('208')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p209" title="p209"><label><img src="img/209.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="209" value="90" /></label><button onClick="off('209')" class="on">OFF</button></div>
+<div class="poke" id="p210" title="p210"><label><img src="img/210.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="210" value="80" /></label><button onClick="off('210')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p211" title="p211"><label><img src="img/211.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="211" value="98" /></label><button onClick="off('211')" class="on">OFF</button></div>
+<div class="poke evolves" id="p212" title="p212"><label><img src="img/212.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="212" value="0" /></label><button onClick="off('212')" class="on">OFF</button></div>
+<div class="poke" id="p213" title="p213"><label><img src="img/213.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="213" value="98" /></label><button onClick="off('213')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke legendaries" id="p214" title="p214"><label><img src="img/214.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="214" value="0" /></label><button onClick="off('214')" class="on">OFF</button></div>
+<div class="poke" id="p215" title="p215"><label><img src="img/215.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="215" value="90" /></label><button onClick="off('215')" class="on">OFF</button></div>
+<div class="poke" id="p216" title="p216"><label><img src="img/216.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="216" value="90" /></label><button onClick="off('216')" class="on">OFF</button></div>
+<div class="poke" id="p217" title="p217"><label><img src="img/217.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="217" value="80" /></label><button onClick="off('217')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke" id="p218" title="p218"><label><img src="img/218.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="218" value="98" /></label><button onClick="off('218')" class="on">OFF</button></div>
+<div class="poke" id="p219" title="p219"><label><img src="img/219.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="219" value="98" /></label><button onClick="off('219')" class="on">OFF</button></div>
+<div class="poke" id="p220" title="p220"><label><img src="img/220.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="220" value="98" /></label><button onClick="off('220')" class="on">OFF</button></div>
+<div class="poke" id="p221" title="p221"><label><img src="img/221.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="221" value="98" /></label><button onClick="off('221')" class="on">OFF</button></div>
+<div class="poke legendaries" id="p222" title="p222"><label><img src="img/222.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="222" value="0" /></label><button onClick="off('222')" class="on">OFF</button></div>
+<div class="poke" id="p223" title="p223"><label><img src="img/223.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="223" value="98" /></label><button onClick="off('223')" class="on">OFF</button></div>
+<div class="poke" id="p224" title="p224"><label><img src="img/224.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="224" value="98" /></label><button onClick="off('224')" class="on">OFF</button></div>
+<div class="poke legendaries" id="p225" title="p225"><label><img src="img/225.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="225" value="0" /></label><button onClick="off('225')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p226" title="p226"><label><img src="img/226.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="226" value="95" /></label><button onClick="off('226')" class="on">OFF</button></div>
+<div class="poke" id="p227" title="p227"><label><img src="img/227.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="227" value="95" /></label><button onClick="off('227')" class="on">OFF</button></div>
+<div class="poke" id="p228" title="p228"><label><img src="img/228.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="228" value="90" /></label><button onClick="off('228')" class="on">OFF</button></div>
+<div class="poke" id="p229" title="p229"><label><img src="img/229.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="229" value="50" /></label><button onClick="off('229')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke evolves" id="p230" title="p230"><label><img src="img/230.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="230" value="0" /></label><button onClick="off('230')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p231" title="p231"><label><img src="img/231.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="231" value="98" /></label><button onClick="off('231')" class="on">OFF</button></div>
+<div class="poke" id="p232" title="p232"><label><img src="img/232.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="232" value="98" /></label><button onClick="off('232')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke evolves" id="p233" title="p233"><label><img src="img/233.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="233" value="0" /></label><button onClick="off('233')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p234" title="p234"><label><img src="img/234.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="234" value="90" /></label><button onClick="off('234')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke legendaries" id="p235" title="p235"><label><img src="img/235.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="235" value="0" /></label><button onClick="off('235')" class="on">OFF</button></div>
+<div class="poke eggs" id="p236" title="p236"><label><img src="img/236.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="236" value="0" /></label><button onClick="off('236')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p237" title="p237"><label><img src="img/237.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="237" value="50" /></label><button onClick="off('237')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke eggs" id="p238" title="p238"><label><img src="img/238.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="238" value="0" /></label><button onClick="off('238')" class="on">OFF</button></div>
+<div class="poke eggs" id="p239" title="p239"><label><img src="img/239.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="239" value="0" /></label><button onClick="off('239')" class="on">OFF</button></div>
+<div class="poke eggs" id="p240" title="p240"><label><img src="img/240.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="240" value="0" /></label><button onClick="off('240')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p241" title="p241"><label><img src="img/241.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="241" value="0" /></label><button onClick="off('241')" class="on">OFF</button></div>
+<div class="poke" id="p242" title="p242"><label><img src="img/242.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="242" value="0" /></label><button onClick="off('242')" class="on">OFF</button></div>
+
+<!-- START BAD POKEMON -->
+<div class="poke legendaries" id="p243" title="p243"><label><img src="img/243.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="243" value="0" /></label><button onClick="off('243')" class="on">OFF</button></div>
+<div class="poke legendaries" id="p244" title="p244"><label><img src="img/244.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="244" value="0" /></label><button onClick="off('244')" class="on">OFF</button></div>
+<div class="poke legendaries" id="p245" title="p245"><label><img src="img/245.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="245" value="0" /></label><button onClick="off('245')" class="on">OFF</button></div>
+<!-- END BAD POKEMON -->
+
+<div class="poke" id="p246" title="p246"><label><img src="img/246.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="246" value="0" /></label><button onClick="off('246')" class="on">OFF</button></div>
+<div class="poke" id="p247" title="p247"><label><img src="img/247.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="247" value="0" /></label><button onClick="off('247')" class="on">OFF</button></div>
+<div class="poke" id="p248" title="p248"><label><img src="img/248.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="248" value="0" /></label><button onClick="off('248')" class="on">OFF</button></div>
+<div class="poke legendaries" id="p249" title="p249"><label><img src="img/249.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="249" value="0" /></label><button onClick="off('249')" class="on">OFF</button></div>
+<div class="poke legendaries" id="p250" title="p250"><label><img src="img/250.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="250" value="0" /></label><button onClick="off('250')" class="on">OFF</button></div>
+<div class="poke legendaries" id="p251" title="p251"><label><img src="img/251.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="251" value="0" /></label><button onClick="off('251')" class="on">OFF</button></div>
+
+<br /><br /><hr /><h1>For Devz:</h1>
+<button onClick="toggleBu()" class="controls">TOGGLE "OFF" BUTTONS</button>
+<button onClick="toggleCo()" class="controls">TOGGLE COMMONS</button>
+<button onClick="toggleUn()" class="controls" title="Regional, Legendaries">TOGGLE UNAVAILABLE</button>
+
+<br />
+<button onClick="whook()" class="controls">GENERATE WEBHOOK FILTER</button>
+<button onClick="palarm()" class="controls">GENERATE PokeAlarm FILTER</button>
+<!-- <br />
+<b>IMPORTANT:</b> <br> 
+The <b>Webhook</b> generator outputs the actual IV value input in here, whereas, <br>
+The <b>PokeAlarm</b> generator outputs the value input here <b>plus 5</b> in order to decrease spam in channels. -->
+<br /><br />
+<textarea id="wh"></textarea>
+<textarea id="pa"></textarea>
+</div>
+<script>toggleBu();toggleUn();</script>
+</body>
+</html>
