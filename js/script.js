@@ -13,12 +13,18 @@ var pokeNumbers = new Array("1","2","3","4","5","6","7","8","9","10","11","12","
 							"229","230","231","232","233","234","235","236","237","238","239","240","241","242","243","244","245","246",
 							"247","248","249","250","251");
 
+var pokeCommons = new Array("10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","27","28","29","30","32","33",
+						"39","40","41","42","46","47","48","49","50","51","52","53","54","55","81","82","84","85","96","97","98","99",
+						"100","101","104","105","109","110","118","119","120","121","161","162","163","164","165","166","167","168",
+						"170","171","177","178","183","184","187","188","189","190","193","194","195","198","200","202","203","206",
+						"207","220","221","223","224");
+/*
 var pokeCommons = new Array("10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","27","28","29","30","32","33","35",
 						"36","37","39","40","41","42","46","47","48","49","50","51","52","54","69","70","79","81","84","85","96","98","99",
 						"104","105","109","110","118","119","120","121","123","161","162","163","164","165","166","167","168","170","171",
 						"177","178","183","184","187","188","189","190","193","194","195","198","200","202","203","206","211","213","215",
 						"218","219","220","221","223","224","234");
-
+*/
 var pokeNames = new Array("Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise",
 						"Caterpie","Metapod","Butterfree","Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata",
 						"Raticate","Spearow","Fearow","Ekans","Arbok","Pikachu","Raichu","Sandshrew","Sandslash","Nidoran♀",
@@ -60,6 +66,10 @@ function off(el) {
 function reEna(el) {
 	var divID = "p"+el;
 	document.getElementById(divID).className = "poke";
+	document.getElementById(divID).style.display = "inline-block";
+	if(document.getElementById(el).value=="OFF") { 
+		document.getElementById(divID).className = "poke disabled";
+	}
 }
 
 // ################################################
@@ -87,7 +97,7 @@ function toggleBu() {
 
 
 // ################################################
-//		Hide Commons
+//		Preset Commons
 // ################################################
 var showCo="yes";
 function toggleCo() {
@@ -101,11 +111,35 @@ function toggleCo() {
 	}
 	else {
 		for (i = 0; i < pokeCommons.length; i++) {
-			reEna(pokeCommons[i]);
 			document.getElementById(pokeCommons[i]).value="98";
+			reEna(pokeCommons[i]);
 		}
 		showCo="yes";
 		return	
+	}
+}
+
+// ################################################
+//		Hide Commons AND/OR Off Pokemon
+// ################################################
+var bCo="no";
+function toggleHiShoCo() {
+	var i;
+	if(bCo=="no") {
+		for (i = 0; i < pokeNumbers.length; i++) {
+			var minIV = document.getElementById(pokeNumbers[i]).value; 
+			if(minIV=="OFF") { document.getElementById("p"+pokeNumbers[i]).style.display = "none" }
+		}
+	bCo="yes";
+	return;
+	}
+	if(bCo=="yes") {
+		for (i = 0; i < pokeNumbers.length; i++) {
+			var minIV = document.getElementById(pokeNumbers[i]).value; 
+			if(minIV=="OFF") { document.getElementById("p"+pokeNumbers[i]).style.display = "inline-block" }
+		}
+	bCo="no";
+	return;
 	}
 }
 
@@ -142,7 +176,7 @@ function toggleUn() {
 function whook() {
 	var wht = document.getElementById("wh"); wht.value="";
 	for (i = 0; i < pokeNumbers.length; i++) {
-		var minIV = document.getElementById(pokeNumbers[i]).value; if(minIV=="OFF") { minIV="101" };
+		var minIV = document.getElementById(pokeNumbers[i]).value; if(minIV=="OFF") { minIV="101" }
 		wht.value += pokeNumbers[i] + ": " + minIV + ",\n";
 	}
 	var newTxt = document.getElementById("wh");
@@ -160,7 +194,8 @@ function palarm() {
 	for (i = 0; i < pokeNames.length; i++) {
 		var minIV = document.getElementById(pokeNumbers[i]).value;
 		var PAminIV = "\": {\"min_iv\":\"" + minIV + "\"},\n";
-		if(minIV=="OFF") { PAminIV="\": \"False\",\n" };
+		if(minIV=="OFF") { PAminIV="\": \"False\",\n" }
+		if(minIV=="0") { PAminIV="\": \"True\",\n" }
 		// if(minIV<=90){if(minIV!=0){minIV=((minIV)*1+5); console.info("less than 90")}}
 		pat.value += "		\"" + pokeNames[i] + PAminIV;
 	}
@@ -168,4 +203,38 @@ function palarm() {
 	paTxt = newTxt.value; 
 	paTxt = paTxt.slice(0, -2); 
 	newTxt.value = paTxt;
+}
+
+
+// #############################################
+//		Black/White List Generator
+// #############################################
+function genBlk() {
+	var outputT = document.getElementById("genlst"); outputT.value=""; 
+	for (i = 0; i < pokeNumbers.length; i++) {
+		var minIV = document.getElementById(pokeNumbers[i]).value; 
+		if(minIV=="OFF") { cast=pokeNumbers[i]+"," }if(minIV!="OFF") { cast="" }
+		outputT.value += cast;
+	}
+	var newTxt = document.getElementById("genlst");
+	genTxt = newTxt.value; 
+	genTxt = genTxt.slice(0, -1); 
+	newTxt.value = genTxt;
+}
+
+
+// #############################################
+//		White List Generator
+// #############################################
+function genWht() {
+	var outputT = document.getElementById("genlst"); outputT.value=""; 
+	for (i = 0; i < pokeNumbers.length; i++) {
+		var minIV = document.getElementById(pokeNumbers[i]).value; 
+		if(minIV!="OFF") { cast=pokeNumbers[i]+"," }if(minIV=="OFF") { cast="" }
+		outputT.value += cast;
+	}
+	var newTxt = document.getElementById("genlst");
+	genTxt = newTxt.value; 
+	genTxt = genTxt.slice(0, -1); 
+	newTxt.value = genTxt;
 }
