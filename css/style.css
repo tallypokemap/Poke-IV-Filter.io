@@ -14,7 +14,7 @@
 	margin: auto;
 }
 .poke input {
-	width: 2em;
+	width: 2.3em;
 	text-align: center;
 	border: none;
 	font-size: 1.8em;
@@ -59,9 +59,6 @@ textarea {
 	color: #999;
 	text-decoration: line-through;
 }
-b {
-	color: #F00;
-}
 .legendaries {
 	background: #FFE6E6;
 }
@@ -77,6 +74,7 @@ b {
 .disabled img, .disabled button {
 	opacity: 0.3;
 }
-.disabled input {
-	font-family: "Impact";
+#loadlst, #genlst {
+	width: 40em;
+	margin: 1em 0 1em 0;
 }
