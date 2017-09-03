@@ -170,6 +170,39 @@ function toggleUn() {
 }
 
 
+
+
+
+
+// ################################################
+//		Load Pokemon
+// ################################################
+function loadList() {
+	var i; 
+	
+	// Separate by comma into array
+	var loadList = document.getElementById("loadlst").value; loadList=loadList.split(","); 
+	// Clear spaces
+	for (i = 0; i < loadList.length; i++) {
+		loadList[i]=loadList[i].replace(" ","");
+	}
+	// Disable and hide all
+	for (i = 0; i < pokeNumbers.length; i++) {
+		off(pokeNumbers[i]);
+	}
+	toggleHiShoCo();
+	// Enable and Show
+	for (i = 0; i < loadList.length; i++) {
+		document.getElementById(loadList[i]).value="0";
+		reEna(loadList[i]);
+	}
+}
+
+
+
+
+
+
 // #############################################
 //		Webhook Filter Generator
 // #############################################
