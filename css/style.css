@@ -1,3 +1,7 @@
+body {
+	font-family: "Arial";
+	font-size: 1em;
+}
 #images {
 	display: block;
 	margin: auto;
@@ -6,8 +10,8 @@
 }
 .poke {
 	display: inline-block;
-	padding: 0 0.5em 0.5em 0.5em;
-	margin: 0.2em;
+	padding: 0.5em;
+	margin: 0.2em 0.1em;
 }
 .poke img, .poke input, .poke button {
 	display: block;
@@ -15,6 +19,7 @@
 }
 .poke input {
 	width: 2.3em;
+	height: 1.1em;
 	text-align: center;
 	border: none;
 	font-size: 1.8em;
@@ -74,7 +79,7 @@ textarea {
 .disabled img, .disabled button {
 	opacity: 0.3;
 }
-#loadlst, #genlst {
+#genlst, #loadlst {
 	width: 40em;
 	margin: 1em 0 1em 0;
 }
