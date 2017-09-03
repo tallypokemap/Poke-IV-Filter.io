@@ -8,12 +8,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>SeattlePokeMaps.com Filter</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=yes, minimal-ui">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="PokeMap">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#3b3b3b">
 
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <script src="js/script.js"></script>
@@ -274,8 +268,16 @@
 <div class="poke legendaries" id="p251" title="p251"><label><img src="img/251.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="251" value="0" /></label><button onClick="off('251')" class="on" tabindex="501">OFF</button></div>
 
 <br /><br /><hr /><h1>For Devz:</h1>
+<br />
+
+<b>Load List</b>:
+	<input type="text" id="loadlst" />
+<button onClick="loadList()"><b>Load</b></button>
+<br />
+
+
 <button onClick="toggleBu()" class="controls">TOGGLE "OFF" BUTTONS</button>
-<button onClick="toggleCo()" class="controls">TOGGLE COMMONS</button><button onClick="toggleHiShoCo()" class="controls">HIDE/SHOW COMMONS</button>
+<button onClick="toggleCo()" class="controls">TOGGLE COMMONS</button><button onClick="toggleHiShoCo()" class="controls">HIDE/SHOW DISABLED</button>
 <button onClick="toggleUn()" class="controls" title="Regional, Legendaries">TOGGLE UNAVAILABLE</button>
 
 <br />
