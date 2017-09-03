@@ -178,7 +178,7 @@ function toggleUn() {
 //		Load Pokemon
 // ################################################
 function loadList() {
-	var i; 
+	var i; bCo="no";
 	
 	// Separate by comma into array
 	var loadList = document.getElementById("loadlst").value; loadList=loadList.split(","); 
