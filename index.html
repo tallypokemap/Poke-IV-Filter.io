@@ -7,13 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>SeattlePokeMaps.com Filter</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=yes, minimal-ui">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="PokeMap">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#3b3b3b">
+<title>PokemonGo Filter Generator</title>
 
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <script src="js/script.js"></script>
@@ -273,8 +267,18 @@
 <div class="poke legendaries" id="p251" title="p251"><label><img src="img/251.png" /><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="251" value="0" /></label><button onClick="off('251')" class="on" tabindex="501">OFF</button></div>
 
 <br /><br /><hr /><h1>For Devz:</h1>
+<br />
+
+<b>Load List</b>:
+	<input type="text" id="loadlst" 
+	value="3, 6, 9, 25, 26, 55, 59, 44, 45, 61, 62, 64, 65, 67, 68, 71, 74, 75, 76, 79, 80, 82, 83, 87, 88, 89, 91, 92, 93, 94, 97, 99, 101, 103, 106, 107, 110, 112, 113, 114, 115, 117, 119, 121, 122, 123, 125, 127, 128, 130, 131, 134, 135, 136, 137, 139, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 154, 157, 160, 171, 172, 173, 174, 175, 176, 179, 180, 181, 182, 184, 186, 189, 196, 197, 199, 201, 204, 205, 208, 212, 214, 215, 217, 221, 222, 224, 225, 226, 229, 230, 232, 233, 235, 236, 237, 238, 239, 240, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251" />
+<button onClick="loadList()"><b>Load</b></button>
+<br />
+
+
 <button onClick="toggleBu()" class="controls">TOGGLE "OFF" BUTTONS</button>
-<button onClick="toggleCo()" class="controls">TOGGLE COMMONS</button><button onClick="toggleHiShoCo()" class="controls">HIDE/SHOW COMMONS</button>
+<button onClick="toggleCo()" class="controls" title="Weedles, Pidgies, Caterpies, etc">TOGGLE COMMONS</button>
+<button onClick="toggleHiShoCo()" class="controls" title="Pokemon that is turned OFF aka Disabled">TOGGLE DISABLED</button>
 <button onClick="toggleUn()" class="controls" title="Regional, Legendaries">TOGGLE UNAVAILABLE</button>
 
 <br />
@@ -294,6 +298,6 @@ The <b>PokeAlarm</b> generator outputs the value input here <b>plus 5</b> in ord
 <textarea id="wh"></textarea>
 <textarea id="pa"></textarea>
 </div>
-<script>toggleBu();toggleUn();toggleCo();</script>
+<script>toggleBu();toggleUn();toggleCo();loadList();</script>
 </body>
 </html>
