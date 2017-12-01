@@ -1,30 +1,31 @@
 var pokeNumbers = new Array("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22",
-							"23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42",
-							"43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62",
-							"63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82",
-							"83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102",
-							"103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120",
-							"121","122","123","124","125","126","127","128","129","130","131","132","133","134","135","136","137","138",
-							"139","140","141","142","143","144","145","146","147","148","149","150","151","152","153","154","155","156",
-							"157","158","159","160","161","162","163","164","165","166","167","168","169","170","171","172","173","174",
-							"175","176","177","178","179","180","181","182","183","184","185","186","187","188","189","190","191","192",
-							"193","194","195","196","197","198","199","200","201","202","203","204","205","206","207","208","209","210",
-							"211","212","213","214","215","216","217","218","219","220","221","222","223","224","225","226","227","228",
-							"229","230","231","232","233","234","235","236","237","238","239","240","241","242","243","244","245","246",
-							"247","248","249","250","251");
+						"23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43",
+						"44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64",
+						"65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85",
+						"86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105",
+						"106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123",
+						"124","125","126","127","128","129","130","131","132","133","134","135","136","137","138","139","140","141",
+						"142","143","144","145","146","147","148","149","150","151","152","153","154","155","156","157","158","159",
+						"160","161","162","163","164","165","166","167","168","169","170","171","172","173","174","175","176","177",
+						"178","179","180","181","182","183","184","185","186","187","188","189","190","191","192","193","194","195",
+						"196","197","198","199","200","201","202","203","204","205","206","207","208","209","210","211","212","213",
+						"214","215","216","217","218","219","220","221","222","223","224","225","226","227","228","229","230","231",
+						"232","233","234","235","236","237","238","239","240","241","242","243","244","245","246","247","248","249",
+						"250","251","252","253","254","255","256","257","258","259","260","261","262","263","264","265","266","267",
+						"268","269","270","271","272","273","274","275","276","277","278","279","280","281","282","283","284","285",
+						"286","287","288","289","290","291","292","293","294","295","296","297","298","299","300","301","302","303",
+						"304","305","306","307","308","309","310","311","312","313","314","315","316","317","318","319","320","321",
+						"322","323","324","325","326","327","328","329","330","331","332","333","334","335","336","337","338","339",
+						"340","341","342","343","344","345","346","347","348","349","350","351","352","353","354","355","356","357",
+						"358","359","360","361","362","363","364","365","366","367","368","369","370","371","372","373","374","375",
+						"376","377","378","379","380","381","382","383","384","385","386");
 
 var pokeCommons = new Array("10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","27","28","29","30","32","33",
 						"39","40","41","42","46","47","48","49","50","51","52","53","54","55","81","82","84","85","96","97","98","99",
 						"100","101","104","105","109","110","118","119","120","121","161","162","163","164","165","166","167","168",
 						"170","171","177","178","183","184","187","188","189","190","193","194","195","198","200","202","203","206",
 						"207","220","221","223","224");
-/*
-var pokeCommons = new Array("10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","27","28","29","30","32","33","35",
-						"36","37","39","40","41","42","46","47","48","49","50","51","52","54","69","70","79","81","84","85","96","98","99",
-						"104","105","109","110","118","119","120","121","123","161","162","163","164","165","166","167","168","170","171",
-						"177","178","183","184","187","188","189","190","193","194","195","198","200","202","203","206","211","213","215",
-						"218","219","220","221","223","224","234");
-*/
+						
 var pokeNames = new Array("Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard","Squirtle","Wartortle","Blastoise",
 						"Caterpie","Metapod","Butterfree","Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot","Rattata",
 						"Raticate","Spearow","Fearow","Ekans","Arbok","Pikachu","Raichu","Sandshrew","Sandslash","Nidoran♀",
@@ -49,7 +50,20 @@ var pokeNames = new Array("Bulbasaur","Ivysaur","Venusaur","Charmander","Charmel
 						"Granbull","Qwilfish","Scizor","Shuckle","Heracross","Sneasel","Teddiursa","Ursaring","Slugma","Magcargo",
 						"Swinub","Piloswine","Corsola","Remoraid","Octillery","Delibird","Mantine","Skarmory","Houndour","Houndoom",
 						"Kingdra","Phanpy","Donphan","Porygon2","Stantler","Smeargle","Tyrogue","Hitmontop","Smoochum","Elekid",
-						"Magby","Miltank","Blissey","Raikou","Entei","Suicune","Larvitar","Pupitar","Tyranitar","Lugia","Ho-Oh","Celebi");
+						"Magby","Miltank","Blissey","Raikou","Entei","Suicune","Larvitar","Pupitar","Tyranitar","Lugia","Ho-Oh","Celebi",
+						"Treecko","Grovyle","Sceptile","Torchic","Combusken","Blaziken","Mudkip","Marshtomp","Swampert","Poochyena",
+						"Mightyena","Zigzagoon","Linoone","Wurmple","Silcoon","Beautifly","Cascoon","Dustox","Lotad","Lombre","Ludicolo",
+						"Seedot","Nuzleaf","Shiftry","Taillow","Swellow","Wingull","Pelipper","Ralts","Kirlia","Gardevoir","Surskit",
+						"Masquerain","Shroomish","Breloom","Slakoth","Vigoroth","Slaking","Nincada","Ninjask","Shedinja","Whismur",
+						"Loudred","Exploud","Makuhita","Hariyama","Azurill","Nosepass","Skitty","Delcatty","Sableye","Mawile","Aron",
+						"Lairon","Aggron","Meditite","Medicham","Electrike","Manectric","Plusle","Minun","Volbeat","Illumise","Roselia",
+						"Gulpin","Swalot","Carvanha","Sharpedo","Wailmer","Wailord","Numel","Camerupt","Torkoal","Spoink","Grumpig",
+						"Spinda","Trapinch","Vibrava","Flygon","Cacnea","Cacturne","Swablu","Altaria","Zangoose","Seviper","Lunatone",
+						"Solrock","Barboach","Whiscash","Corphish","Crawdaunt","Baltoy","Claydol","Lileep","Cradily","Anorith","Armaldo",
+						"Feebas","Milotic","Castform","Kecleon","Shuppet","Banette","Duskull","Dusclops","Tropius","Chimecho","Absol",
+						"Wynaut","Snorunt","Glalie","Spheal","Sealeo","Walrein","Clamperl","Huntail","Gorebyss","Relicanth","Luvdisc",
+						"Bagon","Shelgon","Salamence","Beldum","Metang","Metagross","Regirock","Regice","Registeel","Latias","Latios",
+						"Kyogre","Groudon","Rayquaza","Jirachi","Deoxys");
 //
 // Off function
 //
@@ -67,7 +81,7 @@ function reEna(el) {
 	var divID = "p"+el;
 	document.getElementById(divID).className = "poke";
 	document.getElementById(divID).style.display = "inline-block";
-	if(document.getElementById(el).value=="OFF") { 
+	if(document.getElementById(el).value==="OFF") { 
 		document.getElementById(divID).className = "poke disabled";
 	}
 }
@@ -79,14 +93,14 @@ var btoggled="no";
 function toggleBu() {
 	var x = document.getElementsByClassName("on");
 	var i;
-	if(btoggled=="no") {
+	if(btoggled==="no") {
 		for (i = 0; i < x.length; i++) {
 			x[i].style.display = "none";
 		}
 	btoggled="yes";
 	return;
 	}
-	if(btoggled=="yes") {
+	if(btoggled==="yes") {
 		for (i = 0; i < x.length; i++) {
 			x[i].style.display = "block";
 		}
@@ -102,7 +116,7 @@ function toggleBu() {
 var showCo="yes";
 function toggleCo() {
 	var i;
-	if(showCo=="yes") {
+	if(showCo==="yes") {
 		for (i = 0; i < pokeCommons.length; i++) {
 			off(pokeCommons[i]);
 		}
@@ -125,18 +139,18 @@ function toggleCo() {
 var bCo="no";
 function toggleHiShoCo() {
 	var i;
-	if(bCo=="no") {
+	if(bCo==="no") {
 		for (i = 0; i < pokeNumbers.length; i++) {
 			var minIV = document.getElementById(pokeNumbers[i]).value; 
-			if(minIV=="OFF") { document.getElementById("p"+pokeNumbers[i]).style.display = "none" }
+			if(minIV==="OFF") { document.getElementById("p"+pokeNumbers[i]).style.display = "none" }
 		}
 	bCo="yes";
 	return;
 	}
-	if(bCo=="yes") {
+	if(bCo==="yes") {
 		for (i = 0; i < pokeNumbers.length; i++) {
 			var minIV = document.getElementById(pokeNumbers[i]).value; 
-			if(minIV=="OFF") { document.getElementById("p"+pokeNumbers[i]).style.display = "inline-block" }
+			if(minIV==="OFF") { document.getElementById("p"+pokeNumbers[i]).style.display = "inline-block" }
 		}
 	bCo="no";
 	return;
@@ -153,14 +167,14 @@ var pUn = new Array("p83","p115","p122","p132","p144","p145","p146","p150","p151
 					"p236","p238","p239","p240","p243","p244","p245","p249","p250","p251");
 function toggleUn() {
 	var i;
-	if(bUn=="no") {
+	if(bUn==="no") {
 		for (i = 0; i < pUn.length; i++) {
 			document.getElementById(pUn[i]).style.display = "none";
 		}
 	bUn="yes";
 	return;
 	}
-	if(bUn=="yes") {
+	if(bUn==="yes") {
 		for (i = 0; i < pUn.length; i++) {
 			document.getElementById(pUn[i]).style.display = "inline-block";
 		}
@@ -209,7 +223,7 @@ function loadList() {
 function whook() {
 	var wht = document.getElementById("wh"); wht.value="";
 	for (i = 0; i < pokeNumbers.length; i++) {
-		var minIV = document.getElementById(pokeNumbers[i]).value; if(minIV=="OFF") { minIV="101" }
+		var minIV = document.getElementById(pokeNumbers[i]).value; if(minIV==="OFF") { minIV="101" }
 		wht.value += pokeNumbers[i] + ": " + minIV + ",\n";
 	}
 	var newTxt = document.getElementById("wh");
@@ -227,8 +241,8 @@ function palarm() {
 	for (i = 0; i < pokeNames.length; i++) {
 		var minIV = document.getElementById(pokeNumbers[i]).value;
 		var PAminIV = "\": {\"min_iv\":\"" + minIV + "\"},\n";
-		if(minIV=="OFF") { PAminIV="\": \"False\",\n" }
-		if(minIV=="0") { PAminIV="\": \"True\",\n" }
+		if(minIV==="OFF") { PAminIV="\": \"False\",\n" }
+		if(minIV==="0") { PAminIV="\": \"True\",\n" }
 		// if(minIV<=90){if(minIV!=0){minIV=((minIV)*1+5); console.info("less than 90")}}
 		pat.value += "		\"" + pokeNames[i] + PAminIV;
 	}
@@ -246,7 +260,7 @@ function genBlk() {
 	var outputT = document.getElementById("genlst"); outputT.value=""; 
 	for (i = 0; i < pokeNumbers.length; i++) {
 		var minIV = document.getElementById(pokeNumbers[i]).value; 
-		if(minIV=="OFF") { cast=pokeNumbers[i]+"," }if(minIV!="OFF") { cast="" }
+		if(minIV==="OFF") { cast=pokeNumbers[i]+"," }if(minIV!="OFF") { cast="" }
 		outputT.value += cast;
 	}
 	var newTxt = document.getElementById("genlst");
@@ -263,7 +277,7 @@ function genWht() {
 	var outputT = document.getElementById("genlst"); outputT.value=""; 
 	for (i = 0; i < pokeNumbers.length; i++) {
 		var minIV = document.getElementById(pokeNumbers[i]).value; 
-		if(minIV!="OFF") { cast=pokeNumbers[i]+"," }if(minIV=="OFF") { cast="" }
+		if(minIV!="OFF") { cast=pokeNumbers[i]+"," }if(minIV==="OFF") { cast="" }
 		outputT.value += cast;
 	}
 	var newTxt = document.getElementById("genlst");
