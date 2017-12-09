@@ -36,11 +36,18 @@ button {
 	font-size: 0.8em;
 	cursor: pointer;
 }
-.poke .off {
-	display: none;
+.poke .pnumb {
+	position: absolute;
+	color: #F00;
+	font-weight: bold;
+	background: #FFF;
+	padding: 0.05em 0.2em;
 }
-.poke .on {
+.poke .pname {
 	display: block;
+}
+.poke .offbutton {
+	display: none;
 }
 textarea {
 	display: inline-block;
@@ -82,4 +89,7 @@ textarea {
 #genlst, #loadlst {
 	width: 40em;
 	margin: 1em 0 1em 0;
+}
+small {
+	font-size: 0.75em;
 }
