@@ -74,6 +74,7 @@ function off(el) {
 	document.getElementById(pokeDis).className="poke disabled";
 }
 
+
 //
 // ReEnable OFF'ed Pokemon
 //
@@ -86,12 +87,37 @@ function reEna(el) {
 	}
 }
 
+
+// ################################################
+//		Hide Pokemon Names
+// ################################################
+var ntoggled="no";
+function toggleNa() {
+	var x = document.getElementsByClassName("pname");
+	var i;
+	if(ntoggled==="no") {
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+	ntoggled="yes";
+	return;
+	}
+	if(ntoggled==="yes") {
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "block";
+		}
+	ntoggled="no";
+	return;
+	}
+}
+
+
 // ################################################
 //		Hide OFF buttons
 // ################################################
 var btoggled="no";
 function toggleBu() {
-	var x = document.getElementsByClassName("on");
+	var x = document.getElementsByClassName("offbutton");
 	var i;
 	if(btoggled==="no") {
 		for (i = 0; i < x.length; i++) {
