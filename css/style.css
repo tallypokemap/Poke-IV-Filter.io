@@ -91,3 +91,6 @@ textarea {
 small {
 	font-size: 0.75em;
 }
+fieldset {
+	display: inline-block;
+}
