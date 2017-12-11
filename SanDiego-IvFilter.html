@@ -15,6 +15,7 @@
 <div id="images">
 <img src="img/SanDiego.png" style="width: 68em;" alt /><br />
 
+
 <div class="poke" id="p1" title="p1: Bulbasaur"><label><small class="pname pnumb">#1</small><img src="img/1.png" /><small class="pname">Bulbasaur</small><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="1" value="0" /></label><button onClick="off('1')" class="offbutton" tabindex="601">OFF</button></div>
 <div class="poke" id="p2" title="p2: Ivysaur"><label><small class="pname pnumb">#2</small><img src="img/2.png" /><small class="pname">Ivysaur</small><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="2" value="0" /></label><button onClick="off('2')" class="offbutton" tabindex="602">OFF</button></div>
 <div class="poke" id="p3" title="p3: Venusaur"><label><small class="pname pnumb">#3</small><img src="img/3.png" /><small class="pname">Venusaur</small><input type="text" onFocus="this.select()" onKeyDown="reEna(this.id)" id="3" value="0" /></label><button onClick="off('3')" class="offbutton" tabindex="603">OFF</button></div>
@@ -428,9 +429,16 @@
 	<input type="text" id="genlst" />
 
 <br />
-
-<button onClick="whook()" class="controls">GENERATE Webhook.py FILTER</button>
-<button onClick="palarm()" class="controls">GENERATE PokeAlarm.js FILTER</button>
+<fieldset>
+<legend><b>RocketMap (<small>webhook.py</small>):</b></legend>
+<button onClick="whook()" class="controls">GENERATE FILTER</button>
+<button class="controls" DISABLED>LOAD  FILTER</button>
+</fieldset>
+<fieldset>
+<legend><b>PokeAlarm (<small>alarms.js</small>): </b></legend>
+<button onClick="palarm()" class="controls">GENERATE FILTER</button>
+<button onClick="lpalarm()" class="controls">LOAD FILTER</button>
+</fieldset>
 <!-- <br />
 <b>IMPORTANT:</b> <br> 
 The <b>Webhook</b> generator outputs the actual IV value input in here, whereas, <br>
